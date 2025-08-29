@@ -6,6 +6,9 @@ const App = () => {
   const handleAddVal = () => {
     console.log(count);
     count = count + 5;
+    if (count > 51) {
+      return count;
+    }
     setCount(count);
   };
   const handleDecVal = () => {
